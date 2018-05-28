@@ -1,0 +1,15 @@
+{
+    "question": {
+        "type": "qcs",
+        "reward": 1,
+        "value": "Pourquoi l'école 42 s'appelle l'école 42",
+        "answers": [
+            {
+                "order": "A",
+                "type": "text",
+                "value": "parce que !",
+                "goodAnswer": false
+            }
+        ]
+    }
+}

@@ -14,14 +14,8 @@ export default class Quiz extends React.Component {
   }
 }
 
-export const quizQuery = graphql`
-  query questions {
-    markdownRemark {
-      fileAbsolutePath
-      frontmatter {
-        type
-      }
-      html
-    }
-  }
-`
+// export const quizQuery = graphql`
+//   query questions {
+//     allLettersJson {}
+//   }
+// `
