@@ -1,21 +1,40 @@
 import React from 'react'
 
+import './app.scss'
+import QuestionSlider from '../components/questionSlider/index'
+
 export default class Quiz extends React.Component {
   constructor ({ data }) {
     super()
-    const { markdownRemark } = data
     this.state = {
-      questions: markdownRemark
+      nuggets: extractNode(data.allNuggetsJson.edges)
     }
   }
 
   render () {
-    return <div>{this.state.questions.frontmatter.type}</div>
+    return <div><QuestionSlider questions={this.state.nuggets} /></div>
   }
 }
 
-// export const quizQuery = graphql`
-//   query questions {
-//     allLettersJson {}
-//   }
-// `
+const extractNode = edges => edges.map(({ node }) => node)
+
+export const query = graphql`
+  query IndexQuery {
+    allNuggetsJson {
+      edges {
+        node {
+          index
+          type
+          reward
+          value
+          answers {
+            order
+            type
+            value
+            goodAnswer
+          }
+        }
+      }
+    }
+  }
+`

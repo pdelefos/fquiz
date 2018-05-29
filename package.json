@@ -10,7 +10,8 @@
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-source-filesystem": "^1.5.36",
     "gatsby-transformer-json": "^1.0.18",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-id-swiper": "^1.6.4"
   },
   "keywords": [
     "gatsby"

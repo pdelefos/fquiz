@@ -1,13 +1,13 @@
 {
-    "index": 1,
+    "index": 4,
     "type": "qcs",
     "reward": 1,
-    "value": "Pourquoi l'école 42 s'appelle l'école 42",
+    "value": "ca marche ?",
     "answers": [
         {
             "order": "A",
             "type": "text",
-            "value": "parce que !",
+            "value": "avec des gants en caoutchou",
             "goodAnswer": false
         }
     ]
