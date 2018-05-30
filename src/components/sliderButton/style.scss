@@ -1,0 +1,20 @@
+.slider-arrow {
+    position: absolute;
+    width: 150px;
+    z-index: 10;
+    .slider-arrow__img {
+        width: 100%;
+    }
+}
+.slider-arrow.slider-arrow--right {
+    top: 50%;
+    right: 10px;
+}
+.slider-arrow.slider-arrow--left {
+    top: 50%;
+    left: 10px;
+}
+
+.slider-arrow__img--right {
+    transform: scaleX(-1);
+}
